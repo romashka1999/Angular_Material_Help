@@ -1,0 +1,42 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="over" #refSidenav>
+        <mat-nav-list>
+            <a mat-list-item>home</a>
+            <a mat-list-item>login</a>
+            <a mat-list-item>register</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button mat-raised-button (click)="refSidenav.toggle()"><mat-icon color="primary">reorder</mat-icon></button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-sidenav-content>
+</mat-sidenav-container>
